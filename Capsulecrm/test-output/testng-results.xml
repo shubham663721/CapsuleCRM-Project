@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18972" started-at="2019-05-27T13:50:28Z" finished-at="2019-05-27T13:50:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18972" started-at="2019-05-27T13:50:28Z" finished-at="2019-05-27T13:50:47Z">
+      <class name="testCases.CaseStatusVerification">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.CaseStatusVerification@6d4b1c02]" name="setup" is-config="true" duration-ms="8956" started-at="2019-05-27T19:20:29Z" finished-at="2019-05-27T19:20:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateAddPerson(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.CaseStatusVerification@6d4b1c02]" name="validateAddPerson" duration-ms="9548" started-at="2019-05-27T19:20:38Z" data-provider="getCapsuleCRMTestData" finished-at="2019-05-27T19:20:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Harry]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Software Engineer]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Self]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9.999999999E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddPerson -->
+      </class> <!-- testCases.CaseStatusVerification -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
