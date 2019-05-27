@@ -5,8 +5,7 @@
     <classes>
       <class name="testCases.CaseStatusVerification">
         <methods>
-          <include name="validateAddPerson" invocation-numbers="0"/>
-          <include name="setup"/>
+          <include name="validateAddPerson"/>
         </methods>
       </class> <!-- testCases.CaseStatusVerification -->
     </classes>

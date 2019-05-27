@@ -48,7 +48,7 @@ public Object[][] getCapsuleCRMTestData() throws IOException{
 }
 
 @Test(dataProvider="getCapsuleCRMTestData")
-public void validateAddPerson(String title, String firstName, String lastName, String jobTitle, String org, String Phone) throws InterruptedException {
+public void validateAddPerson(String title, String firstName, String lastName, String jobTitle, String org, String Phone, String CaseName, String TagV) throws InterruptedException {
 	String titleofPage = loginPage.login();
 	Assert.assertEquals(titleofPage, "Dashboard | self CRM","Title is Incorrect");
 	String peopleTitle = peopleandOrg.ClickPersonIcon();
@@ -58,7 +58,7 @@ public void validateAddPerson(String title, String firstName, String lastName, S
     Assert.assertTrue(userAdded,"user is not Added");
    String casesTitle = cases.ClickCasesIcon();
    Assert.assertEquals(casesTitle,"Cases", "Title is Incorrect");
-   
+   cases.AddCase(firstName, lastName, CaseName, TagV);
 }
 	
 }

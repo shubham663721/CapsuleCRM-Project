@@ -20,7 +20,12 @@ public class Cases extends TestBase {
 	WebElement caseRelatedto;
 	@FindBy(xpath="//input[@id='caseNameDecorate:name']")
 	WebElement caseName;
-	
+	@FindBy(xpath="//div[@class='addTagComboBox']")
+	WebElement tag;
+	@FindBy(xpath="//input[@id='tagsDecorate:j_id191']")
+	WebElement Addtag;
+	@FindBy(xpath="//input[@id='save']")
+    WebElement save;
 	public Cases() {
 		PageFactory.initElements(driver, this);
 		
@@ -33,8 +38,12 @@ public class Cases extends TestBase {
 	   return titleIs;
 	}
 	
-	public void AddCase(String fn, String ln) {
+	public void AddCase(String fn, String ln, String caseN, String tagValue) {
 		addCaseButton.click();
 		caseRelatedto.sendKeys(fn + " " + ln);
+		caseName.sendKeys(caseN);
+		tag.sendKeys(tagValue);
+		Addtag.click();
+		save.click();
 	}
 }
