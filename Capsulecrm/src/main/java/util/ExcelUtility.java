@@ -2,7 +2,6 @@ package util;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -28,7 +27,6 @@ public class ExcelUtility extends TestBase{
 		for(int j=0;j<sheet.getRow(0).getLastCellNum();j++) {
 			
 			data[i][j] = sheet.getRow(i + 1).getCell(j).toString();
-			System.out.println("data from excel is--> " + data[i][j]);
 		}
 	}
 	wb.close();
