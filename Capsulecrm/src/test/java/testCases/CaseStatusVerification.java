@@ -47,6 +47,7 @@ public void validateAddPerson(String title, String firstName, String lastName, S
      Assert.assertEquals(peopleTitle, "People & Organisations");
 	peopleandOrg.addPerson(title, firstName, lastName, jobTitle, org, Phone);
     boolean userAdded =	peopleandOrg.verifyPersonAdded(firstName, lastName);
+<<<<<<< HEAD
      Assert.assertTrue(userAdded,"user is not Added");
     String casesTitle = cases.ClickCasesIcon();
      Assert.assertEquals(casesTitle,"Cases", "Title is Incorrect");
@@ -62,6 +63,12 @@ public void validateAddPerson(String title, String firstName, String lastName, S
 @AfterMethod()
 public void tearDown() {
 	driver.quit();
+=======
+    Assert.assertTrue(userAdded,"user is not Added");
+   String casesTitle = cases.ClickCasesIcon();
+   Assert.assertEquals(casesTitle,"Cases", "Title is Incorrect");
+   cases.AddCase(firstName, lastName, CaseName, TagV);
+>>>>>>> bc9c7a93450dc0a7c968041114f2e9531ce52000
 }
 	
 }

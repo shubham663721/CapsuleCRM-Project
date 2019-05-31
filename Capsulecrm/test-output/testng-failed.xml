@@ -5,8 +5,12 @@
     <classes>
       <class name="testCases.AccountSettingsTestCase">
         <methods>
+<<<<<<< HEAD
           <include name="setup"/>
           <include name="headerValidation" invocation-numbers="5"/>
+=======
+          <include name="validateAddPerson"/>
+>>>>>>> bc9c7a93450dc0a7c968041114f2e9531ce52000
         </methods>
       </class> <!-- testCases.AccountSettingsTestCase -->
     </classes>

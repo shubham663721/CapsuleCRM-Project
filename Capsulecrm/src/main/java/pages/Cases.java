@@ -23,12 +23,17 @@ public class Cases extends TestBase {
 	WebElement firstSuggestion;
 	@FindBy(xpath="//input[@id='caseNameDecorate:name']")
 	WebElement caseName;
+<<<<<<< HEAD
 	@FindBy(xpath="//span[@class='ui-combobox']/input")
+=======
+	@FindBy(xpath="//div[@class='addTagComboBox']")
+>>>>>>> bc9c7a93450dc0a7c968041114f2e9531ce52000
 	WebElement tag;
 	@FindBy(xpath="//input[@id='tagsDecorate:j_id191']")
 	WebElement Addtag;
 	@FindBy(xpath="//input[@id='save']")
     WebElement save;
+<<<<<<< HEAD
 	@FindBy(xpath="//div[@class='entity-details-title']")
     WebElement caseTitle;
 	@FindBy(xpath="//div[@class='kase-summary-status float-left']/span")
@@ -36,6 +41,8 @@ public class Cases extends TestBase {
 	@FindBy(xpath="//a[@class='ember-view']")
     WebElement nameVerification;
 	
+=======
+>>>>>>> bc9c7a93450dc0a7c968041114f2e9531ce52000
 	public Cases() {
 		PageFactory.initElements(driver, this);
 		
@@ -48,6 +55,7 @@ public class Cases extends TestBase {
 	   return titleIs;
 	}
 	
+<<<<<<< HEAD
 	public String AddCase(String fn, String ln, String caseN, String tagValue) throws InterruptedException {
 		addCaseButton.click();
 		caseRelatedto.sendKeys(fn + " " + ln);
@@ -60,6 +68,15 @@ public class Cases extends TestBase {
 		save.click();
 	String CaseTitle =	caseTitle.getText();
 	return CaseTitle;
+=======
+	public void AddCase(String fn, String ln, String caseN, String tagValue) {
+		addCaseButton.click();
+		caseRelatedto.sendKeys(fn + " " + ln);
+		caseName.sendKeys(caseN);
+		tag.sendKeys(tagValue);
+		Addtag.click();
+		save.click();
+>>>>>>> bc9c7a93450dc0a7c968041114f2e9531ce52000
 	}
 	public String nameV() {
 		String name = nameVerification.getText();
